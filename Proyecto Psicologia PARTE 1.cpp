@@ -33,65 +33,30 @@ int main() {
 		cout<<" CIF:  ";
 		cin>>cif;
 		
-		int LongitudCIF = cif.lenght();
+		int LongitudCIF = cif.length();
 		
-		if (LonfitudCIF =! 8)
+		if (LongitudCIF =! 8)
 		{
-			cout<<" Tu CIF debe contener 8 digitos. Vuelve a ingresarlo."
+			cout<<" Tu CIF debe contener 8 digitos. Vuelve a ingresarlo.";
+			cin>>cif;
 		}
-		//Manda a llamar al subprograma que crea un nuevo expediente: Alejandro
+		
+		cout<<" Ingresa tu contrasenia:  ";
+		
+		//Manda a llamar al subprograma que contiene las opciones disponibles para estudiantes. 
 		break;
 	
 	case 2:
-		cout<<"Actualizacion de expediente existente: ";
-		//Manda a llamar al subprograma que permite ingresar a los expedientes que ya existen: Camila
+		
+		cout<<" \n Ingreso de psicologo.  \n  Bienvenido! \n  Por favor ingresa tu usuario y contrasenia para ingresar. \n";
+		//Manda a llamar al subprograma que contiene las opciones del psicologo
 		break;
 		
 	case 3:
-		cout<<"Creacion de nueva receta medica: \n \n";
-		//Manda a llamar al subprograma que crea una nueva receta medica: Halinda
-		/*int creararchivo(){
-		ofstream archivo; //Declara variable de tipo archivo
-		archivo.open("Archive1.txt"); //Abrir y crear un archivo de texto
-		cout<<" \n\n\t Hola wenas";
-		archivo.close();
-		return 0;
-		} su makina no pude hacer un txt, ahi se va en consola 7-7
-		*/
-		
-		cout<<"Ingrese el nombre del paciente: ";
-		cin>>paciente;
-		cout<<"Edad: ";
-		cin>>edad;
-		
-		if (edad>120 || edad<0)
-		{
-			cout<<"Ingrese una edad valida: ";
-			cin>>edad;
-		}
-		
-		cout<<"Ingrese la fecha (DD/MM/AA): ";
-		cin>>fecha;
-		
-		cout<<"Ahora ingrese la cantidad de elementos a recetar: ";
-		cin>>cant;
-		
-		for(int i = 1; i <= cant; i = i + 1)
-		{
-				cout<<"\nIngrese el enunciado "<< i<< " de la receta medica: \n";
-        		cin>>enunciado;
-        		cout<<"\nUsted ha recetado: \n"<<enunciado;
-		}
-		
-		cout<<"Usted ha realizado la receta del/la paciente "<< paciente<< " de "<< edad<< " anios, el dia "<< fecha<< ".\n";
-		
+		cout<<" \n Ingreso de administrador.  \n  Bienvenido! \n  Por favor ingresa tu usuario y contrasenia para ingresar. \n";
+		//Manda a llamar al subprograma que contiene las opciones del administrador
 		break;
-	
-	
-	case 4:	
-		cout<<"Personalizacion de expediente y/o receta";
-		//Manda a llamar al subprograma que permite ingresar a los expedientes y recetas que ya existen: Nerio
-		break;
+		
 	};
 
 	return 0;
